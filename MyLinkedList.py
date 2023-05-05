@@ -28,7 +28,7 @@ class MyLinkedList:
             return
         while True:
             if curr.data == e:
-                if self.head.nextE is None:
+                if self.head.nextE is not None:
 
                     if self.head == curr:
                         self.head = curr.nextE
@@ -125,3 +125,9 @@ class MyLinkedList:
         else:
             tmp = tmp + "]"
         return str(tmp)
+
+    def __iter__(self):
+        curr = self.head
+        while curr:
+            yield curr.data
+            curr = curr.nextE

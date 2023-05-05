@@ -2,6 +2,9 @@ import MyLinkedList
 
 linked_list = MyLinkedList.MyLinkedList()
 linked_list.append(4, "<=")
+linked_list.append(19, "<=")
+linked_list.append(7, "<=")
+linked_list.append(2, "<=")
 
 
 print(linked_list)
